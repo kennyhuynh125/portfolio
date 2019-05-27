@@ -8,10 +8,10 @@ import Projects from '../Projects';
 const Main = () => (
   <Fragment>
       <Switch>
-        <Route exact path='/portfolio' component={Home} />
-        <Route path='/portfolio/experience' component={Experience} />
-        <Route path='/portfolio/projects' component={Projects} />
-        <Route path='/portfolio/contact' component={Contact} />
+        <Route exact path='/' component={Home} />
+        <Route path='/experience' component={Experience} />
+        <Route path='/projects' component={Projects} />
+        <Route path='/contact' component={Contact} />
       </Switch>
   </Fragment>
 );
