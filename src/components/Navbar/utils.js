@@ -5,15 +5,15 @@ export const LINKS = [
     title: 'Home',
   },
   {
-    href: '/experience',
+    href: '/portfolio/experience',
     title: 'Work Experience',
   },
   {
-    href: '/projects',
+    href: '/portfolio/projects',
     title: 'Projects',
   },
   {
-    href: '/contact',
+    href: '/portfolio/contact',
     title: 'Contact',
   },
 ];
