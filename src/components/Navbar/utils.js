@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/prefer-default-export
 export const LINKS = [
   {
-    href: '/',
+    href: '/portfolio',
     title: 'Home',
   },
   {
