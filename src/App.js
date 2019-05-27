@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import { Spacer } from './components/reusable';
+import Main from './components/Main';
+import Navbar from './components/Navbar';
+import Background from './images/background.jpg';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const style = {
+  position: 'absolute',
+  top: 0,
+  bottom: 0,
+  left: 0,
+  right: 0,
+  zIndex: -1,
+  width: '100%',
+  opacity: 0.3,
+};
+
+const App = () => (
+  <Fragment>
+    <img alt='background' src={Background} style={style} />
+    <Navbar />
+    <Spacer />
+    <Main />
+  </Fragment>
+);
 
 export default App;
