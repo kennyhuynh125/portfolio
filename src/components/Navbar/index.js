@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { StyleSheet, css } from 'aphrodite';
 import { Container, Text } from '../reusable';
 import { LINKS } from './utils';
@@ -36,8 +37,9 @@ const Navbar = () => (
       {
         LINKS.map(item => (
           <li className={css(styles.li)}>
-            <a className={css(styles.a)} href={item.href}>
-            <Text size='big'>{item.title}</Text></a>
+            <Link to={item.href} className={css(styles.a)}>
+              <Text size='big'>{item.title}</Text>
+            </Link>
           </li>
         ))
       }
